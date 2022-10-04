@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    background: hsl(185, 41%, 84%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 50px;
+    color: hsl(183, 100%, 15%);
+}
+
+.attribution a {
+    color: hsl(172, 67%, 37%);
+}
+
+.attribution a:hover {
+    color: hsl(172, 67%, 45%);
+}
+
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+     -moz-appearance: textfield;
+}
+
+main {
+    width: 946px;
+    height: 495px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    margin: 91px 0 78px 0;
+    border-radius: 25px;
+}
+
+.main-choice h2 {
+    color: hsl(186, 14%, 43%);
+    margin: 0;
+    font-size: 16px;
+}
+
+.main-summary h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    color: hsl(184, 14%, 56%);
+    font-size: 13px;
+    margin: 0;
+}
+
+.main-choice {
+    margin: 47px 50px 47px 49px;
+    width: 390px;
+    height: 397px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-div {
+    background: hsl(189, 41%, 97%);
+    margin: 7px 0 41px;
+    width: 384px;
+    height: 44px;
+    border: 3px solid hsl(189, 41%, 97%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+
+.input-icon-dolar {
+    margin: 0 20px;
+}
+
+.input-icon-person {
+    margin: 0 18px;
+}
+
+.input {
+    margin-right: 16px;
+    height: 30px;
+    background: none;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    text-align: end;
+    width: 100%;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.alert-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#alert1, #alert2 {
+    color: hsl(15, 100%, 72%);
+}
+
+.buttons-container {
+    width: 100%;
+    margin-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 121px;
+    height: 49px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 17px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    color: hsl(183, 100%, 15%) !important;
+    background: hsl(173, 60%, 76%) !important;
+}
+
+.custom-input-div {
+    width: 115px;
+    height: 43px;
+    background: hsl(189, 41%, 97%);
+    border-radius: 6px;
+    border: 3px solid hsl(189, 41%, 97%);
+    transition: all 0.4s ease;
+}
+
+.custom-input {
+    width: 89px;
+    padding: 0;
+    border: none;
+    height: 43px;
+    background: none;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    text-align: end;
+    margin: 0px 13px;
+    line-height: 49px;
+    cursor: pointer;
+}
+
+.custom-input::placeholder {
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+.main-summary {
+    background: hsl(183, 100%, 15%);
+    width: 425px;
+    height: 430px;
+    margin-top: 32px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary-container {
+    margin: 45px 0 0 41px;
+    width: 343px;
+    height: 100%;
+}
+
+.summary-container-section {
+    margin-bottom: 28px;
+    width: 100%;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+#tip-per-person, #total-per-person {
+    color: hsl(172, 67%, 45%);
+    font-size: 48px;
+    margin: 0;
+    font-size: 48px;
+}
+
+#reset-button {
+    width: 100%;
+    height: 50px;
+    margin-top: 96px;
+    background: hsl(183, 79%, 24%);
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4 ease;
+}
+
+#reset-button:enabled:hover {
+    color: hsl(183, 100%, 15%) !important;
+    background: hsl(173, 60%, 76%) !important;
+    cursor: pointer;
+}

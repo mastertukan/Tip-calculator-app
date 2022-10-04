@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+    <img src="./images/logo.svg" alt="logo" class="logo""></img>
+
+    <form onchange="calculate();" id="myForm">
+        <main>
+            <div class="main-choice">
+                <div class="alert-container">
+                    <h2>Bill</h2>
+                    <div id="alert1"></div>
+                </div>
+                <div class="input-div" id="input-div-1">
+                    <img src="./images/icon-dollar.svg" alt="dollar-icon" class="input-icon-dolar">
+                    <input 
+                    type="number" 
+                    id="bill" 
+                    class="input" 
+                    onblur="tooSmallBill(); buttonEnable();"
+                    onclick="inputActive(1);">
+                </div>
+
+                <h2>Select Tip %</h2>
+                <div class="buttons-container">
+                    <button id="btn1" class="tip-button" type="button" onclick="tipSelection(1); activeButton(1); calculate();">5%</button>
+                    <button id="btn2" class="tip-button" type="button" onclick="tipSelection(2); activeButton(2); calculate();">10%</button>
+                    <button id="btn3" class="tip-button" type="button" onclick="tipSelection(3); activeButton(3); calculate();">15%</button>
+                    <button id="btn4" class="tip-button" type="button" onclick="tipSelection(4); activeButton(4); calculate();">25%</button>
+                    <button id="btn5" class="tip-button" type="button" onclick="tipSelection(5); activeButton(5); calculate();">50%</button>
+                    <div class="custom-input-div" id="input-div-2">
+                        <input 
+                        type="number" 
+                        class="custom-input"
+                        id="custom-input" 
+                        placeholder="Custom"
+                        onblur="tipSelection(6); activeButton(6);"
+                        onclick="inputActive(2);">
+                    </div>
+                </div>
+            
+                <div class="alert-container">
+                    <h2>Number of People</h2>
+                    <div id="alert2"></div>
+                </div>
+                
+                <div class="input-div" id="input-div-3">
+                    <img src="./images/icon-person.svg" alt="person-icon" class="input-icon-person">
+                    <input 
+                    type="number" 
+                    id="people" 
+                    class="input"
+                    onblur="tooFewPeople(); buttonEnable();" 
+                    onclick="inputActive(3);">
+                </div>
+            </div>
+
+            <div class="main-summary">
+                <div class="summary-container">
+                    <div class="summary-container-section">
+                        <div class="summary-container-left">
+                            <h2>Tip Amount</h2>
+                            <p>/ person</p>
+                        </div>
+                        <div class="summary-container-right">
+                            <div id="tip-per-person">$0.00</div>
+                        </div>
+                    </div>
+
+                    <div class="summary-container-section">
+                        <div class="summary-container-left">
+                            <h2>Total</h2>
+                            <p>/ person</p>
+                        </div>
+                        <div class="summary-container-right">
+                            <div id="total-per-person" role="">$0.00</div>
+                        </div>
+                    </div>
+
+                    <input type="reset" value="RESET" id="reset-button" onclick="buttonEnable(); resetButton(); activeButton();" disabled>
+                </div>
+            </div>
+        </main>
+    </form>
+
+    <script src="script.js"></script>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/mastertukan">Mastertukan</a>.
+    </div>
+</body>
+</html>
