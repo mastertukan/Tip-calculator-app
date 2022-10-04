@@ -45,12 +45,12 @@ main {
 }
 
 .main-container {
-    width: 946px;
-    height: 495px;
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 
-.main-choice h2 {
+.main-choice label {
     color: hsl(186, 14%, 43%);
     margin: 0;
     font-size: 16px;
