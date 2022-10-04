@@ -223,6 +223,10 @@ function calculate() {
     {
         tipValue = 1;
     }
+    if (tipValue < 0) 
+    {
+        tipValue = 0;
+    }
     if (people == "" || people == 0 || people == undefined) {
         people = 1;
     }

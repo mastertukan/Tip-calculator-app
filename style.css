@@ -26,7 +26,6 @@ body {
     color: hsl(172, 67%, 45%);
 }
 
-
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -41,9 +40,14 @@ main {
     width: 946px;
     height: 495px;
     background-color: hsl(0, 0%, 100%);
-    display: flex;
     margin: 91px 0 78px 0;
     border-radius: 25px;
+}
+
+.main-container {
+    width: 946px;
+    height: 495px;
+    display: flex;
 }
 
 .main-choice h2 {
